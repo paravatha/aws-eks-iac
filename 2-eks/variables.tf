@@ -6,21 +6,21 @@ variable "region" {
 }
 
 variable "vpc_name" {
-  description = "Exising VPC name"
+  description = "Existing VPC name"
   type        = string
   default     = "llmops-eks-vpc"
 }
 
 variable "vpc_id" {
-  description = "Exising VPC id"
+  description = "Existing VPC id"
   type        = string
-  default     = "vpc-xxx"
+  default     = "vpc-xxxx"
 }
 
 variable "vpc_cidr" {
-  description = "Exising VPC CIDR"
+  description = "Existing VPC CIDR"
   type        = string
-  default     = "101.0.0.0/16"
+  default     = "10.0.0.0/16"
 }
 
 variable "cluster_name" {
@@ -38,7 +38,7 @@ variable "cluster_region" {
 variable "cluster_version" {
   description = "The EKS version to use"
   type        = string
-  default     = "1.26"
+  default     = "1.28"
 }
 
 variable "node_instance_type" {

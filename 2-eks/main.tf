@@ -90,10 +90,10 @@ module "eks" {
       name           = "${local.cluster_name}-managed"
       iam_role_name  = "${local.cluster_name}-managed"
       instance_types = [var.node_instance_type]
-      disk_size      = 30
-      min_size       = 1
-      desired_size   = 2
-      max_size       = 5
+      disk_size      = 20
+      min_size       = 3
+      desired_size   = 3
+      max_size       = 6
       labels = {
         ng_group = "${local.cluster_name}-platform"
       }
